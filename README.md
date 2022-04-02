@@ -7,7 +7,7 @@ Share all files in Internal Storage with another device on Wi-Fi using Termux
 # Requirements:
  - Android 7.0 or up (arm-arm64)
  - Allow Internal Storage access
- - 250MB Free space
+ - 600MB Free space
  - Termux latest version
  - Non-supported x86, mips
 
