@@ -1,5 +1,5 @@
 # http-share-termux
-Share all files in Internal Storage with another device on Wi-Fi using Termux
+Share all files in Internal Storage with another device on Wi-Fi or 3G/4G using Termux
 
 [![Github All Releases](https://img.shields.io/github/downloads/KhanhNguyen9872/http-share-termux/total.svg?style=for-the-badge)](https://github.com/KhanhNguyen9872/http-share-termux#)
 [![Github All Releases](https://img.shields.io/github/release/KhanhNguyen9872/http-share-termux.svg?style=for-the-badge)](https://github.com/KhanhNguyen9872/http-share-termux#)
