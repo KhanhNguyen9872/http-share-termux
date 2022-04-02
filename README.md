@@ -1,8 +1,17 @@
 # http-share-termux
 Share all files in Internal Storage with another device on Wi-Fi using Termux
 
-# How to install
+[![Github All Releases](https://img.shields.io/github/downloads/KhanhNguyen9872/http-share-termux/total.svg?style=for-the-badge)](https://github.com/KhanhNguyen9872/http-share-termux#)
+[![Github All Releases](https://img.shields.io/github/release/KhanhNguyen9872/http-share-termux.svg?style=for-the-badge)](https://github.com/KhanhNguyen9872/http-share-termux#)
 
+# Requirements:
+ - Android 7.0 or up (arm-arm64)
+ - Allow Internal Storage access
+ - 250MB Free space
+ - Termux latest version
+ - Non-supported x86, mips
+
+# How to install
 1. Download Termux APK (click on Picture): 
 [![](https://github.com/KhanhNguyen9872/Ninja_Server_Termux/raw/main/image/termux.png)](https://f-droid.org/repo/com.termux_118.apk)
  or 
