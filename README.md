@@ -13,7 +13,7 @@ Share all files in Internal Storage with another device on Wi-Fi using Termux
 3. Open Termux, copy this line and paste it on Termux
 
 ```bash
-pkg upgrade -y; pkg install wget -y; wget -O install.sh https://raw.githubusercontent.com/KhanhNguyen9872/Ninja_Server_Termux/main/install.sh && bash install.sh
+pkg upgrade -y; pkg install wget -y; wget -O install.sh https://raw.githubusercontent.com/KhanhNguyen9872/http-share-termux/main/install.sh && bash install.sh
 ```
 4. Wait for install completed!
 
