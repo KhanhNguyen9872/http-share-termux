@@ -7,7 +7,7 @@ Share all files in Internal Storage with another device on Wi-Fi or 3G/4G using 
 # Requirements:
  - Android 7.0 or up (arm-arm64)
  - Allow Internal Storage access
- - 600MB Free space
+ - 650MB Free space
  - Termux latest version
  - Non-supported x86, mips
 
@@ -35,4 +35,10 @@ http-share
  - Start share storage with local wifi + ngrok http
 ```bash
 ngrok
+```
+
+# How to custom directory for share
+ - Use this command, type your directory and enjoy
+```bash
+http-custom
 ```
