@@ -8,17 +8,27 @@
 cd 2> /dev/null
 echo "Y" | termux-setup-storage > /dev/null
 
-if [[ $1 != "KhanhNguyen98720937927513" ]] 2> /dev/null; then
-	exit 0
-fi
+red='\033[1;31m'
+yellow='\033[1;33m'
+light_cyan='\033[1;96m'
+green='\033[1;32m'
+reset='\033[0m'
 
-if [ -f ~/../usr/etc/kcustom ] 2> /dev/null; then
-	khanhfolder="$(cat ~/../usr/etc/kcustom)"
+printf "\n${yellow}Custom: ${light_cyan}"
+read -p "/sdcard/" khanhfolder
+printf "${reset}"
+
+if [[ $khanhfolder == "" ]] 2> /dev/null || [ -z $khanhfolder ] 2> /dev/null; then
+	unset khanhfolder
+else
 	if [ ! -d "/sdcard/${khanhfolder}" ] 2> /dev/null; then
-		unset khanhfolder
+		printf "\n${red} /sdcard/${khanhfolder} not found!\n\n${reset}"
+		exit 0
+	else
+		rm -f ~/../usr/etc/kcustom 2> /dev/null
+		printf "${khanhfolder}" > ~/../usr/etc/kcustom
 	fi
 fi
-
 cd ~/../usr/share/KhanhNguyen9872
 unset LD_PRELOAD
 command="proot"
@@ -36,9 +46,10 @@ command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/us
 command+=" TERM=$TERM"
 command+=" LANG=C.UTF-8"
 command+=" /bin/bash --login"
-com="mkdir /var/www 2> /dev/null; cd /var/www/; rm -f html 2> /dev/null; ln -s '/sdcard/${khanhfolder}' html; service apache2 start; while [ -z $keep ] 2> /dev/null; do sleep 9999; done"
+com="mkdir /var/www 2> /dev/null; cd /var/www/; rm -f html 2> /dev/null; ln -s '/sdcard/${khanhfolder}' html; exit"
 $command -c "$com"
 unset com
 unset command
 unset khanhfolder
+printf "${green}\n Custom http: /sdcard/${khanhfolder} completed!\n\n${reset}"
 exit 0
