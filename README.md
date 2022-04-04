@@ -4,6 +4,15 @@ Share all files in Internal Storage with another device on the Internet using Te
 [![Github All Releases](https://img.shields.io/github/downloads/KhanhNguyen9872/http-share-termux/total.svg?style=for-the-badge)](https://github.com/KhanhNguyen9872/http-share-termux#)
 [![Github All Releases](https://img.shields.io/github/release/KhanhNguyen9872/http-share-termux.svg?style=for-the-badge)](https://github.com/KhanhNguyen9872/http-share-termux#)
 
+# Features:
+ - Share all file/folder to another device
+ - Share with Local wifi or using ngrok to public in the internet
+ - Upload file up to 4096MB
+ - You can custom folder your want to share
+ - Anyone can access file share [read-only]
+ - You can login admin account to upload, delete, rename, compress tar file,...
+ - Easy to install
+
 # Requirements:
  - Android 7.0 or up (arm-arm64)
  - Allow Internal Storage access
