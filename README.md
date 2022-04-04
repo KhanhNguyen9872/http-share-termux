@@ -37,6 +37,16 @@ http-share
 ngrok
 ```
 
+# Default Username/Password [Admin]
+```
+admin
+123
+```
+ - You can change password by using this command:
+```bash
+http-password
+```
+
 # How to custom directory for share
  - Use this command, type your directory and enjoy
 ```bash
