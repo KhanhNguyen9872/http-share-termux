@@ -37,7 +37,7 @@ http-share
 ngrok
 ```
 
-# Default Username/Password [Admin]
+# Username/Password
 ```
 admin
 123
