@@ -9,7 +9,7 @@ Share all files in Internal Storage with another device on the Internet using Te
  - Share with Local wifi or using ngrok to public in the internet
  - Upload file up to 4096MB
  - You can custom folder your want to share
- - Anyone can access file share [read-only]
+ - You can disable or enable Guest account
  - You can login admin account to upload, delete, rename, compress tar file,...
  - Easy to install
 
@@ -54,6 +54,17 @@ admin
  - You can change password by using this command:
 ```bash
 http-password
+```
+
+# Guest account
+ - Enable Guest
+```bash
+http-guest enable
+```
+ 
+ - Disable Guest
+```bash
+http-guest disable
 ```
 
 # How to custom directory for share
